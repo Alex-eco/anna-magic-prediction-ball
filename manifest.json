@@ -1,0 +1,47 @@
+{
+  "schema": 3,
+  "required_executas": [],
+  "optional_executas": [],
+  "permissions": [],
+  "tags": ["game", "entertainment", "prediction", "fun"],
+  "system_prompt_addendum": "Magic Prediction Ball is a playful entertainment app. Its answers are random and are not predictions, advice, or factual guidance.",
+  "user_message_prefix_template": "[Magic Prediction Ball] {user_message}",
+  "ui": {
+    "bundle": {
+      "format": "static-spa",
+      "entry": "index.html",
+      "external_origins": []
+    },
+    "views": [
+      {
+        "name": "main",
+        "title": "Magic Prediction Ball",
+        "default": true,
+        "entry": "index.html",
+        "min_size": {"w": 520, "h": 650},
+        "default_size": {"w": 620, "h": 760},
+        "max_size": {"w": 1000, "h": 1000},
+        "resizable": true,
+        "movable": true,
+        "single_instance": true
+      }
+    ],
+    "host_api": {
+      "tools": [],
+      "chat": [],
+      "artifact": [],
+      "llm": [],
+      "fs": [],
+      "storage": [],
+      "prefs": [],
+      "window": []
+    },
+    "csp_overrides": {
+      "connect-src": ["'self'"],
+      "img-src": ["'self'", "data:", "blob:"],
+      "font-src": ["'self'", "data:"],
+      "style-src": ["'self'", "'unsafe-inline'"],
+      "script-src": ["'self'"]
+    }
+  }
+}
