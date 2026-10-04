@@ -1,0 +1,9 @@
+{
+  "name": "Magic Prediction Ball",
+  "slug": "magic-prediction-ball",
+  "version": "0.1.0",
+  "description": "A simple interactive prediction ball. Ask a question and tap the ball for a playful answer.",
+  "entry": "index.html",
+  "platform": "desktop",
+  "category": "Entertainment"
+}
